@@ -21,54 +21,37 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.206" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout1"
+
+    <EditText
+        android:id="@+id/et_email_signUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="30dp"
-        app:boxBackgroundColor="@color/white"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_signUp1">
+        app:layout_constraintTop_toBottomOf="@+id/tv_signUp1" />
 
-        <EditText
-            android:id="@+id/et_email_signUp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
+    <EditText
+        android:id="@+id/et_password_signUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
-        android:layoutDirection="ltr"
-        app:boxBackgroundColor="@color/white"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout1"
-        app:passwordToggleEnabled="true">
-
-        <EditText
-            android:id="@+id/et_password_signUp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:layoutDirection="ltr"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="34dp"
-            tools:layout_editor_absoluteY="385dp" />
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintTop_toBottomOf="@+id/et_email_signUp" />
 
 
     <Button
@@ -78,7 +61,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="#FF018786"
         android:text="SIGN UP"
         android:textColor="#fff"
@@ -89,7 +72,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/et_password_signUp" />
 
     <TextView
         android:id="@+id/tv_registered"

@@ -1,9 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Todo List"
+        android:textColor="@color/teal_700"
+        android:background="#D7F4CCB1"
+        android:textSize="40sp"
+        android:textStyle="italic|bold"
+        android:textAlignment="center"
+        android:paddingTop="30dp"/>
+
+    <ListView
+        android:id="@+id/listView_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D7F4CCB1"
+        android:layout_marginTop="80dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scrollbars="none"/>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_gravity="bottom|end"
+        app:rippleColor="@color/white"
+        android:elevation="10dp"
+        android:src="@drawable/ic_add"
+        android:translationZ="10dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_signOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_gravity="bottom|start"
+        android:backgroundTint="#F4736A"
+        android:elevation="10dp"
+        android:src="@drawable/ic_logout"
+        android:translationZ="10dp"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
